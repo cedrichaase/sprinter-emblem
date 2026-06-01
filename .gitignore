@@ -8,3 +8,4 @@
 # SVG inputs (only mountain-logo.svg is tracked as an example)
 *.svg
 !mountain-logo.svg
+!peace.svg

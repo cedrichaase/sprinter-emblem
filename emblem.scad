@@ -1,12 +1,15 @@
 $fn=200;
 
-svg_file        = "./fvf-logo.svg";
+svg_file        = "./peace.svg";
 emblem_d        = 120;
 protrude        = 2;      // mm logo protrudes above dome surface
 
-// potrace outputs SVG with pt units (250pt = 88.194mm in OpenSCAD)
-svg_mm          = 250 * (25.4 / 72);
-logo_d          = emblem_d;           // SVG has its own border; fill full emblem
+// potrace outputs SVG with pt units matching the input BMP pixel count
+// peace.svg: 1000pt → 1000*(25.4/72) = 352.78mm in OpenSCAD
+svg_mm          = 1000 * (25.4 / 72);
+// Peace symbol outer ring is at r=430 in a 1000px BMP → 430/500 of SVG half-width.
+// Scale up so the outer ring lands exactly at the emblem edge.
+logo_d          = emblem_d * (500.0 / 430.0);
 logo_scale      = logo_d / svg_mm;
 
 sphere_z_factor = 1/10;
