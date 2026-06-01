@@ -1,0 +1,9 @@
+# Generated 3D model outputs
+*.stl
+!pacifik_mers.stl
+*.3mf
+*.gcode
+
+# SVG inputs (only mountain-logo.svg is tracked as an example)
+*.svg
+!mountain-logo.svg
