@@ -3,6 +3,7 @@
 !pacifik_mers.stl
 *.3mf
 *.gcode
+*.png
 
 # SVG inputs (only mountain-logo.svg is tracked as an example)
 *.svg
